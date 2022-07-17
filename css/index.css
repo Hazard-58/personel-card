@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: rgba(105, 210, 255, 0.43);
+}
+
+.container {
+    background-color: white;
+    margin: 50px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container .image {
+    border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: translatey(70%);
+
+
+}
+
+
+.container .name {
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.container .name  {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.container .name span {
+    font-weight: 400;
+    color: #777;
+
+}
+.container .name > span {
+    margin-top: 10px;
+} 
+
+
+.container .stats {
+    display: flex;
+    margin: 20px 0;
+}
+
+.container .stats div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .stats div span:first-of-type {
+    font-weight: 700;
+}
+.container .stats div span:last-of-type {
+    color: #777;
+}
